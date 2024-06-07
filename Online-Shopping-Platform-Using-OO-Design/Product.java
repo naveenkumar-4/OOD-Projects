@@ -6,7 +6,7 @@ public class Product{
     private String description;
     private double price;
     private List<String> categories;
-    private List<Reviews> reviews;
+    private List<Review> reviews;
 
     public Product(String productId, String name, String description, double price, List<String> categories, List<Reviews> reviews){
         this.productId = productId;
@@ -25,7 +25,7 @@ public class Product{
         this.productId = productId;
     }
 
-    public Strig getName(){
+    public String getName(){
         return name;
     }
 
@@ -33,7 +33,7 @@ public class Product{
         this.name = name;
     }
 
-    public Strig getDescription(){
+    public String getDescription(){
         return description;
     }
 
@@ -45,7 +45,7 @@ public class Product{
         return categories;
     }
 
-    public void setCategories(List<Strig> categories){
+    public void setCategories(List<String> categories){
         this.categories = categories;
     }
 
