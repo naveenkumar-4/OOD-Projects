@@ -14,7 +14,6 @@ public class Product{
         this.description = description;
         this.price = price;
         this.categories = categories;
-        this.reviews = reviews;
     }
 
     public String getProductId(){
@@ -49,11 +48,11 @@ public class Product{
         this.categories = categories;
     }
 
-    public List<String> getReviews(){
+    public List<Review> getReviews(){
         return reviews;
     }
 
-    public void setReviews(List<String> reviews){
+    public void setReviews(List<Review> reviews){
         this.reviews = reviews;
     }
 }
