@@ -14,7 +14,7 @@ public class User {
         this.userId = userId;
         this.name = name;
         this.email = email;
-        this.hashedPassword = hashedPassword(password);
+        this.hashedPassword = hashPassword(password);
     }
 
     public String getUserId(){
@@ -46,14 +46,14 @@ public class User {
     }
 
     public void setPassword(String password){
-        this.hashedPassword = hashedPassword(password);
+        this.hashedPassword = hashPassword(password);
     }
 
     public PaymentMethod getSavedPaymentsMethod(){
         return savedPaymentMethod;
     }
 
-    public void setSavedPaymentsMetho(Paymethod savedPaymentMethod){
+    public void setSavedPaymentsMetho(PaymentMethod savedPaymentMethod){
         this.savedPaymentMethod = savedPaymentMethod;
     }
 

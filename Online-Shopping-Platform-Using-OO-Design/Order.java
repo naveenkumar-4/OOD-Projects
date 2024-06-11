@@ -20,6 +20,6 @@ public class Order {
     }
 
     public void setPaymentMethod(PaymentMethod paymentMethod){
-        this.paymentMethod = paymentMethod;
+        this.paymentMethod = paymentMethod; 
     }
 }
