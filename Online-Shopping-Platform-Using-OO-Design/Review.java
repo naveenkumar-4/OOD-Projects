@@ -6,13 +6,13 @@ public class Review {
     private int upvotes;
     private int downvotes;
 
-    public Review(String userId, String productId, int rating, String comment, int upvotes, int downvotes) {
+    public Review(String userId, String productId, int rating, String comment) {
         this.userId = userId;
         this.productId = productId;
         this.rating = rating;
         this.comment = comment;
-        this.upvotes = upvotes;
-        this.downvotes = downvotes;
+        this.upvotes = 0;
+        this.downvotes = 0;
     }
 
     public String getUserId() {

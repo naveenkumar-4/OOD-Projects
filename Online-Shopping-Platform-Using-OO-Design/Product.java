@@ -1,5 +1,6 @@
 import java.util.List;
 
+
 public class Product{
     private String productId;
     private String name;
@@ -8,12 +9,13 @@ public class Product{
     private List<String> categories;
     private List<Review> reviews;
 
-    public Product(String productId, String name, String description, double price, List<String> categories, List<Reviews> reviews){
+    public Product(String productId, String name, String description, double price, List<String> categories, List<Review> reviews){
         this.productId = productId;
         this.name = name;
         this.description = description;
         this.price = price;
         this.categories = categories;
+        this.reviews = reviews;
     }
 
     public String getProductId(){
@@ -40,6 +42,13 @@ public class Product{
         this.description = description;
     }
 
+    public double getPrice(){
+        return price;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
     public List<String> getCategories(){
         return categories;
     }

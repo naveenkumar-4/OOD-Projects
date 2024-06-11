@@ -41,7 +41,7 @@ public class User {
         this.email = email;
     }
 
-    public String getHashedPassword(String password){
+    public String getHashedPassword(){
         return hashedPassword;
     }
 
